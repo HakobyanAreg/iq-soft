@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import {CommonModule} from "@angular/common";
+import {FilterDirective} from "../directives/filter.directive";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
